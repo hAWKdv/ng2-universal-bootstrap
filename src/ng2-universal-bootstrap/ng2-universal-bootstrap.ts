@@ -27,12 +27,14 @@ var ng2UniversalBootstrap = ng2UniversalBootstrap || (function () {
       ];      
     }
     
-    Promise.all(libs.map((src) => {
-      return System.import(src);
-    })).then(() => {
-      System.import(bootstrap)
-        .catch(() => console.log('error'));
-    });
+    // libs = config.coreLibs || libs;
+    // libs = libs.concat(config.libs || []);
+    
+    Promise.all(libs.map(src => System.import(src)))
+      .then(() => {
+        System.import(bootstrap)
+          .catch(err => console.error('Error:', err));
+      });
   };
   
   return boot;

@@ -1,7 +1,4 @@
-// Import all Ng2 scripts which are in charge of web worker management - Ng2 Web Worker Part
-importScripts(
-  '/node_modules/systemjs/dist/system.src.js'
-);
+importScripts('/node_modules/systemjs/dist/system.src.js');
 
 // Configure SystemJs for web workers
 System.config({ defaultJSExtensions: true });
@@ -14,7 +11,4 @@ importScripts(
 
 // Import the bootstrapping service 
 System.import('./boot-wrapper')
-  .then(
-    () => console.log('The application has started successfully'),
-    error => console.error('error loading background', error)
-  );
+  .catch(err => console.error('Error:', err));
