@@ -25,6 +25,7 @@
     "mocha": "^2.4.5",
     "open": "0.0.5",
     "serve-static": "^1.10.2",
+    "tslint": "^3.8.0",
     "typings": "^0.7.7"
   },
   "dependencies": {
