@@ -9,12 +9,12 @@
     "moduleResolution": "node",
     "removeComments": true,
     "sourceMap": false,
-	"outDir": "./dist"
+    "outDir": "./dist"
   },
   "exclude": [
     "node_modules",
-	"typings/browser.d.ts",
-	"typings/browser",
-	"dist"
+    "typings/browser.d.ts",
+    "typings/browser",
+    "dist"
   ]
 }

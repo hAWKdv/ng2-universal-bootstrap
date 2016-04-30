@@ -9,14 +9,15 @@
     <script src="/node_modules/systemjs/dist/system.src.js"></script>
     <script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
     <script>
-        System.config({ // as func arg
+        System.config({
           defaultJSExtensions: true
         });
     </script>
     <script src="/dist/ng2-universal-bootstrap/ng2-universal-bootstrap.js"></script>
     <script>
       ng2UniversalBootstrap({
-        webworker: true
+        webworker: true,
+        libs: []
       });
     </script>
   </body>
